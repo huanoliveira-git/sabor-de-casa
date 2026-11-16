@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Acesso ao gerenciamento do cardápio">
+  <title>Entrar | Sabor de Casa</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo">
+      <a class="marca" href="index.html">
+        <span class="icone-marca" aria-hidden="true">🍽️</span>
+        <span class="marca-texto">
+          <strong>Sabor de Casa</strong>
+          <span>Cardápio digital</span>
+        </span>
+      </a>
+      <nav class="menu">
+        <a href="index.html">Ver cardápio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="conteudo login-conteudo">
+    <section class="login-caixa">
+      <div class="login-apresentacao">
+        <span class="destaque">Área de gerenciamento</span>
+        <h1>Entre para cuidar do cardápio</h1>
+      </div>
+
+      <div id="mensagem" class="mensagem" role="alert"></div>
+
+      <form id="formulario-login" class="painel formulario-login">
+        <div class="grupo-campo">
+          <label for="usuario">Usuário</label>
+          <input id="usuario" name="usuario" type="text" required autocomplete="username">
+        </div>
+
+        <div class="grupo-campo">
+          <label for="senha">Senha</label>
+          <input id="senha" name="senha" type="password" required autocomplete="current-password">
+        </div>
+
+        <button id="botao-entrar" class="botao botao-principal botao-largo" type="submit">Entrar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/autenticacao.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/comum.js"></script>
+  <script src="js/login.js"></script>
+</body>
+
+</html>

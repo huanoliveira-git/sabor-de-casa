@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gerenciamento do cardápio da Sabor de Casa">
+  <title>Gerenciamento | Sabor de Casa</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo">
+      <a class="marca" href="gerenciamento.html">
+        <span class="icone-marca" aria-hidden="true">🍽️</span>
+        <span class="marca-texto">
+          <strong>Sabor de Casa</strong>
+          <span>Gerenciamento do cardápio</span>
+        </span>
+      </a>
+      <nav class="menu">
+        <a href="index.html">Ver cardápio</a>
+        <button class="link-menu" type="button" data-sair>Sair</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <section class="topo-pagina">
+      <div>
+        <span class="destaque">Área de gerenciamento</span>
+        <h1>Organize o cardápio</h1>
+        <p class="subtitulo">Cadastre as categorias e os pratos da Sabor de Casa.</p>
+      </div>
+      <a class="botao botao-principal" href="categoria-form.html">Nova categoria</a>
+    </section>
+
+    <div id="mensagem" class="mensagem" role="alert"></div>
+
+    <section class="painel">
+      <h2 class="titulo-lista">Categorias</h2>
+      <div class="barra-filtros">
+        <input id="pesquisa" class="campo-pesquisa" type="search" placeholder="Pesquisar categoria"
+          aria-label="Pesquisar categoria">
+      </div>
+      <div id="lista-categorias" class="lista-cartoes">
+        <p class="estado-lista">Carregando categorias...</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/autenticacao.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/comum.js"></script>
+  <script src="js/categorias.js"></script>
+</body>
+
+</html>

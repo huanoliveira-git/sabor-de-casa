@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prato | Sabor de Casa</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo">
+      <a class="marca" href="gerenciamento.html">
+        <span class="icone-marca" aria-hidden="true">🍽️</span>
+        <span class="marca-texto">
+          <strong>Sabor de Casa</strong>
+          <span>Gerenciamento do cardápio</span>
+        </span>
+      </a>
+      <nav class="menu">
+        <a href="index.html">Ver cardápio</a>
+        <a href="gerenciamento.html">Categorias</a>
+        <button class="link-menu" type="button" data-sair>Sair</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <a id="link-voltar" class="voltar" href="index.html">← Voltar para pratos</a>
+
+    <section class="topo-pagina">
+      <div>
+        <h1 id="titulo-pagina">Novo prato</h1>
+        <p class="subtitulo">Informe os dados do prato.</p>
+      </div>
+    </section>
+
+    <div id="mensagem" class="mensagem" role="alert"></div>
+
+    <form id="formulario-prato" class="painel formulario">
+      <div class="grupo-campo">
+        <label for="nome">Nome <span class="obrigatorio">*</span></label>
+        <input id="nome" name="nome" type="text" maxlength="80" required autocomplete="off">
+        <small class="ajuda-campo">Máximo de 80 caracteres.</small>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="descricao">Descrição</label>
+        <textarea id="descricao" name="descricao" maxlength="200"></textarea>
+        <small class="ajuda-campo">Máximo de 200 caracteres.</small>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="preco">Preço <span class="obrigatorio">*</span></label>
+        <input id="preco" name="preco" type="text" inputmode="decimal" placeholder="Exemplo: 24,90" required>
+        <small class="ajuda-campo">O preço precisa ser maior que zero.</small>
+      </div>
+
+      <div class="grupo-campo opcao-checkbox">
+        <input id="disponivel" name="disponivel" type="checkbox" checked>
+        <label for="disponivel">Prato disponível no cardápio</label>
+      </div>
+
+      <div class="acoes">
+        <button id="botao-salvar" class="botao botao-principal" type="submit">Salvar prato</button>
+        <a id="link-cancelar" class="botao botao-secundario" href="index.html">Cancelar</a>
+      </div>
+    </form>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/autenticacao.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/comum.js"></script>
+  <script src="js/prato-form.js"></script>
+</body>
+
+</html>

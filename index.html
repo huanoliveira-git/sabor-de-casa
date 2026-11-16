@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cardápio da Marmitaria Sabor de Casa">
+  <title>Cardápio | Sabor de Casa</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo">
+      <a class="marca" href="index.html">
+        <span class="icone-marca" aria-hidden="true">🍽️</span>
+        <span class="marca-texto">
+          <strong>Sabor de Casa</strong>
+          <span>Cardápio digital</span>
+        </span>
+      </a>
+      <nav class="menu">
+        <a class="botao botao-cabecalho" href="login.html">Gerenciar cardápio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <section class="apresentacao">
+      <div>
+        <span class="destaque">Comida caseira</span>
+        <h1>Escolha seu prato</h1>
+        <p>Veja as opções disponíveis e os preços do dia.</p>
+      </div>
+      <div class="resumo-cardapio">
+        <strong>Cardápio atualizado</strong>
+        <span>Categorias, pratos e preços em um só lugar.</span>
+      </div>
+    </section>
+
+    <section class="secao-cardapio">
+      <div class="titulo-secao">
+        <div>
+          <h2>Nosso cardápio</h2>
+          <p>Confira as opções disponíveis no momento.</p>
+        </div>
+      </div>
+
+      <div id="mensagem" class="mensagem" role="alert"></div>
+      <div id="cardapio" class="cardapio-publico">
+        <p class="estado-lista">Carregando o cardápio...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Sabor de Casa — cardápio digital</p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/autenticacao.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/comum.js"></script>
+  <script src="js/inicio.js"></script>
+</body>
+
+</html>
